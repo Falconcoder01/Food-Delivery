@@ -59,7 +59,7 @@ A fully Dockerized MERN (MongoDB, Express.js, React.js, Node.js) food delivery w
 ## Clone and Run
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Food-Delivery.git
+git clone https://github.com/Falconcoder01/Food-Delivery.git
 cd Food-Delivery
 docker-compose up --build
 ```
