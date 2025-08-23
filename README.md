@@ -1,130 +1,70 @@
-# TOMATO - Food Ordering Website
+# 🚚 Food Delivery App – Dockerized MERN Stack application with Nginx 
 
-This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering.
 
-## Demo
+A fully Dockerized MERN (MongoDB, Express.js, React.js, Node.js) food delivery web application featuring Nginx as a reverse proxy and load-balancer for streamlined performance, scalability, and production-ready deployment.
 
-- User Panel: [https://food-delivery-frontend-s2l9.onrender.com/](https://food-delivery-frontend-s2l9.onrender.com/)
-- Admin Panel: [https://food-delivery-admin-wrme.onrender.com/](https://food-delivery-admin-wrme.onrender.com/)
+> Forked and enhanced from [@Mshandev/Food-Delivery](https://github.com/Mshandev/Food-Delivery)  
+> Modernized with Docker, Docker Compose, and Nginx for seamless containerized deployment.
 
-## Features
+---
 
-- User Panel
-- Admin Panel
-- JWT Authentication
-- Password Hashing with Bcrypt
-- Stripe Payment Integration
-- Login/Signup
-- Logout
-- Add to Cart
-- Place Order
-- Order Management
-- Products Management
-- Filter Food Products
-- Login/Signup
-- Authenticated APIs
-- REST APIs
-- Role-Based Identification
-- Beautiful Alerts
+## 🔥 Features
 
-## Screenshots
+- 🍔 Full-stack Food Delivery Application
+- 📦 Dockerized Backend, Frontend, and MongoDB
+- 🌐 Nginx Reverse Proxy for Load Balancing and Performance
+- 🧾 Authentication, Cart, and Order Management
+- 🧠 Built with MERN Stack
+- 💻 Easily Deployable on Any Docker-Ready Host
 
-![Hero](https://i.ibb.co/59cwY75/food-hero.png)
-- Hero Section
+---
 
-![Products](https://i.ibb.co/JnNQPyQ/food-products.png)
-- Products Section
+## 🚀 Tech Stack
 
-![Cart](https://i.ibb.co/t2LrQ8p/food-cart.png)
-- Cart Page
+| Layer     | Technology                  |
+|-----------|-----------------------------|
+| Frontend  | React.js, Redux, Tailwind   |
+| admin     | React.js, Redux, Tailwind   |
+| Backend   | Node.js, Express.js         |
+| Database  | MongoDB                     |
+| Proxy     | Nginx (multi-container setup) |
+| Containerization | Docker, Docker Compose |
 
-![Login](https://i.ibb.co/s6PgwkZ/food-login.png)
-- Login Popup
+---
 
-## Run Locally
+## 🐳 Getting Started with Docker
 
-Clone the project
+### Prerequisites
 
-```bash
-    git clone https://github.com/Mshandev/Food-Delivery
-```
-Go to the project directory
+- Docker & Docker Compose installed
+- Git installed
 
-```bash
-    cd Food-Delivery
-```
-Install dependencies (frontend)
+## 📂 Structure:
 
-```bash
-    cd frontend
-    npm install
-```
-Install dependencies (admin)
+    Frontend: http://localhost
+    admin-panel: http://localhost/admin
+    Backend API: http://localhost/api (proxied via Nginx)
+    MongoDB: Internal container (mongo:latest)
+
+
+
+## Setup Environment Variables
+
+    JWT_SECRET=YOUR_SECRET_TEXT
+    SALT=YOUR_SALT_VALUE
+    MONGO_URL=YOUR_DATABASE_URL
+    STRIPE_SECRET_KEY=YOUR_KEY
+
+
+## Clone and Run
 
 ```bash
-    cd admin
-    npm install
+git clone https://github.com/YOUR_USERNAME/Food-Delivery.git
+cd Food-Delivery
+docker-compose up --build
 ```
-Install dependencies (backend)
+## 📬 Contact
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/utkarshm1/)
+Email: utkarshmishra5485@gmail.com
 
-```bash
-    cd backend
-    npm install
-```
-Setup Environment Vaiables
 
-```Make .env file in "backend" folder and store environment Variables
-  JWT_SECRET=YOUR_SECRET_TEXT
-  SALT=YOUR_SALT_VALUE
-  MONGO_URL=YOUR_DATABASE_URL
-  STRIPE_SECRET_KEY=YOUR_KEY
- ```
-
-Setup the Frontend and Backend URL
-   - App.jsx in Admin folder
-      const url = YOUR_BACKEND_URL
-     
-  - StoreContext.js in Frontend folder
-      const url = YOUR_BACKEND_URL
-
-  - orderController in Backend folder
-      const frontend_url = YOUR_FRONTEND_URL 
-
-Start the Backend server
-
-```bash
-    nodemon server.js
-```
-
-Start the Frontend server
-
-```bash
-    npm start
-```
-
-Start the Backend server
-
-```bash
-    npm start
-```
-## Tech Stack
-* [React](https://reactjs.org/)
-* [Node.js](https://nodejs.org/en)
-* [Express.js](https://expressjs.com/)
-* [Mongodb](https://www.mongodb.com/)
-* [Stripe](https://stripe.com/)
-* [JWT-Authentication](https://jwt.io/introduction)
-* [Multer](https://www.npmjs.com/package/multer)
-
-## Deployment
-
-The application is deployed on Render.
-
-## Contributing
-
-Contributions are always welcome!
-Just raise an issue, and we will discuss it.
-
-## Feedback
-
-If you have any feedback, please reach out to me [here](https://www.linkedin.com/in/muhammad-shan-full-stack-developer/)
