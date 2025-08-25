@@ -36,7 +36,7 @@ A fully Dockerized MERN (MongoDB, Express.js, React.js, Node.js) food delivery w
 
 ### Prerequisites
 
-- Docker & Docker Compose installed
+- Docker v2 & Docker Compose v2 installed
 - Git installed
 
 ## 📂 Structure:
@@ -48,7 +48,7 @@ A fully Dockerized MERN (MongoDB, Express.js, React.js, Node.js) food delivery w
 
 
 
-## Setup Environment Variables
+## Setup Environment Variables In Backend
 
     JWT_SECRET=YOUR_SECRET_TEXT
     SALT=YOUR_SALT_VALUE
@@ -61,7 +61,7 @@ A fully Dockerized MERN (MongoDB, Express.js, React.js, Node.js) food delivery w
 ```bash
 git clone https://github.com/Falconcoder01/Food-Delivery.git
 cd Food-Delivery
-docker-compose up --build
+docker compose up -d --build
 ```
 ## 📬 Contact
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/utkarshm1/)
